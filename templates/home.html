@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OpenAI Response</title>
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="{{ url_for('static', filename='style.css') }}"
+        />
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="info-block">
+                <h2 class="info-title">Resort<br /></h2>
+            </div>
+            <div class="info-block">
+                <h2 class="info-title">Road Conditions</h2>
+            </div>
+            <div class="info-block">
+                <h2 class="info-title">12 Hour <br />Snow Total
+                </h2>
+            </div>
+            <div class="info-block">
+                <h2 class="info-title">24 Hour <br />Snow Total
+                </h2>
+            </div>
+            <div class="info-block">
+                <h2 class="info-title">Forecast</h2>
+            </div>
+            <div class="info-block">
+                <p class="info-content">Alta</p>
+            </div>
+            <div class="info-block">
+                <p class="info-content" >{{ alta_openai }}</p>
+            </div>
+            <div class="info-block">
+                <p class="info-content">{{ alta_12hr }}</p>
+            </div>
+            <div class="info-block">
+                <p class="info-content">{{ alta_24hr }}</p>
+            </div>
+            <div class="info-block">
+                <p class="info-content">{{ alta_forecast }}</p>
+            </div>
+            <div class="info-block">
+                <p class="info-content">Solitude</p>
+            </div>
+            <div class="info-block">
+                <p class="info-content" >{{ bcc_openai }}</p>
+            </div>
+            <div class="info-block">
+                <p class="info-content">{{ alta_12hr }}</p>
+            </div>
+            <div class="info-block">
+                <p class="info-content">{{ alta_24hr }}</p>
+            </div>
+            <div class="info-block">
+                <p class="info-content">{{ alta_forecast }}</p>
+            </div>
+            <div class="info-block">x</div>
+            <div class="info-block">x</div>
+            <div class="info-block">x</div>
+            <div class="info-block">x</div>
+            <!-- Repeat for the remaining rows -->
+        </div>
+        <div class="snowstake"; id="alta_snowstake">
+            <img src="https://altaskiarea.s3-us-west-2.amazonaws.com/mountain-cams/Collins_Snow_Stake.jpg" alt="Alta Snowstake" />
+        </div>
+        <div class="snowstake"; id="dv_snowstake">
+            <img src="../screenshot.png"/>
+        </div>
+    </body>
+</html>
